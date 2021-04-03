@@ -26,3 +26,8 @@ use Illuminate\Support\Facades\Route;
 // Route::get('{id?}', 'MyController@index');
 
 Route::get('/admin/{age}', 'MyController@admin')->middleware('checkage');
+// Route::get('{id?}', 'MyController@index');
+
+Route::get('/admin', 'MyController@admin')->middleware('checklogin');
+Route::get('/login', 'MyController@login');
+
