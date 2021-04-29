@@ -13,9 +13,17 @@ class CreateTransactionTable extends Migration
      */
     public function up()
     {
-        Schema::create('transaction', function (Blueprint $table) {
+        Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('total');
+            $table->integer('quantity');
+            $table->string('address');
+            $table->string('telephone');
+            $table->string('productid');
+            $table->string('cartid');
             $table->timestamps();
+            $table->foreign('cartid')->references('id')->on('carts');
         });
     }
 
@@ -26,6 +34,6 @@ class CreateTransactionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transaction');
+        Schema::dropIfExists('transactions');
     }
 }

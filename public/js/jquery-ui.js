@@ -1331,7 +1331,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 		}
 
 		if((this.offsetParent[0] == document.body) //This needs to be actually done for all browsers, since pageX/pageY includes this information
-		|| (this.offsetParent[0].tagName && this.offsetParent[0].tagName.toLowerCase() == 'html' && $.ui.ie)) //Ugly IE fix
+		|| (this.offsetParent[0].tagName && this.offsetParent[0].tagName.toLowerCase() == 'blade.php' && $.ui.ie)) //Ugly IE fix
 			po = { top: 0, left: 0 };
 
 		return {
@@ -1406,7 +1406,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 
 		if(!pos) pos = this.position;
 		var mod = d == "absolute" ? 1 : -1;
-		var o = this.options, scroll = this.cssPosition == 'absolute' && !(this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(html|body)/i).test(scroll[0].tagName);
+		var o = this.options, scroll = this.cssPosition == 'absolute' && !(this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(blade.php|body)/i).test(scroll[0].tagName);
 
 		return {
 			top: (
@@ -1427,7 +1427,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 
 	_generatePosition: function(event) {
 
-		var o = this.options, scroll = this.cssPosition == 'absolute' && !(this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(html|body)/i).test(scroll[0].tagName);
+		var o = this.options, scroll = this.cssPosition == 'absolute' && !(this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(blade.php|body)/i).test(scroll[0].tagName);
 		var pageX = event.pageX;
 		var pageY = event.pageY;
 
@@ -1699,13 +1699,13 @@ $.ui.plugin.add("draggable", "opacity", {
 $.ui.plugin.add("draggable", "scroll", {
 	start: function(event, ui) {
 		var i = $(this).data("draggable");
-		if(i.scrollParent[0] != document && i.scrollParent[0].tagName != 'HTML') i.overflowOffset = i.scrollParent.offset();
+		if(i.scrollParent[0] != document && i.scrollParent[0].tagName != 'blade.php') i.overflowOffset = i.scrollParent.offset();
 	},
 	drag: function(event, ui) {
 
 		var i = $(this).data("draggable"), o = i.options, scrolled = false;
 
-		if(i.scrollParent[0] != document && i.scrollParent[0].tagName != 'HTML') {
+		if(i.scrollParent[0] != document && i.scrollParent[0].tagName != 'blade.php') {
 
 			if(!o.axis || o.axis != 'x') {
 				if((i.overflowOffset.top + i.scrollParent[0].offsetHeight) - event.pageY < o.scrollSensitivity)
@@ -3356,7 +3356,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		}
 
 		//Prepare scrolling
-		if(this.scrollParent[0] != document && this.scrollParent[0].tagName != 'HTML')
+		if(this.scrollParent[0] != document && this.scrollParent[0].tagName != 'blade.php')
 			this.overflowOffset = this.scrollParent.offset();
 
 		//Call callbacks
@@ -3400,7 +3400,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		//Do scrolling
 		if(this.options.scroll) {
 			var o = this.options, scrolled = false;
-			if(this.scrollParent[0] != document && this.scrollParent[0].tagName != 'HTML') {
+			if(this.scrollParent[0] != document && this.scrollParent[0].tagName != 'blade.php') {
 
 				if((this.overflowOffset.top + this.scrollParent[0].offsetHeight) - event.pageY < o.scrollSensitivity)
 					this.scrollParent[0].scrollTop = scrolled = this.scrollParent[0].scrollTop + o.scrollSpeed;
@@ -3979,7 +3979,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		}
 
 		if((this.offsetParent[0] == document.body) //This needs to be actually done for all browsers, since pageX/pageY includes this information
-		|| (this.offsetParent[0].tagName && this.offsetParent[0].tagName.toLowerCase() == 'html' && $.ui.ie)) //Ugly IE fix
+		|| (this.offsetParent[0].tagName && this.offsetParent[0].tagName.toLowerCase() == 'blade.php' && $.ui.ie)) //Ugly IE fix
 			po = { top: 0, left: 0 };
 
 		return {
@@ -4047,7 +4047,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 
 		if(!pos) pos = this.position;
 		var mod = d == "absolute" ? 1 : -1;
-		var o = this.options, scroll = this.cssPosition == 'absolute' && !(this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(html|body)/i).test(scroll[0].tagName);
+		var o = this.options, scroll = this.cssPosition == 'absolute' && !(this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(blade.php|body)/i).test(scroll[0].tagName);
 
 		return {
 			top: (
@@ -4068,7 +4068,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 
 	_generatePosition: function(event) {
 
-		var o = this.options, scroll = this.cssPosition == 'absolute' && !(this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(html|body)/i).test(scroll[0].tagName);
+		var o = this.options, scroll = this.cssPosition == 'absolute' && !(this.scrollParent[0] != document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(blade.php|body)/i).test(scroll[0].tagName);
 
 		// This is another very weird special case that only happens for relative elements:
 		// 1. If the css position is relative
@@ -6877,7 +6877,7 @@ $.widget( "ui.button", {
 			focusClass = "ui-state-focus";
 
 		if ( options.label === null ) {
-			options.label = (this.type === "input" ? this.buttonElement.val() : this.buttonElement.html());
+			options.label = (this.type === "input" ? this.buttonElement.val() : this.buttonElement.blade.php());
 		}
 
 		this._hoverable( this.buttonElement );
@@ -7065,7 +7065,7 @@ $.widget( "ui.button", {
 			.removeClass( baseClasses + " " + stateClasses + " " + typeClasses )
 			.removeAttr( "role" )
 			.removeAttr( "aria-pressed" )
-			.html( this.buttonElement.find(".ui-button-text").html() );
+			.blade.php( this.buttonElement.find(".ui-button-text").blade.php() );
 
 		if ( !this.hasTitle ) {
 			this.buttonElement.removeAttr( "title" );
@@ -7127,7 +7127,7 @@ $.widget( "ui.button", {
 		var buttonElement = this.buttonElement.removeClass( typeClasses ),
 			buttonText = $( "<span></span>", this.document[0] )
 				.addClass( "ui-button-text" )
-				.html( this.options.label )
+				.blade.php( this.options.label )
 				.appendTo( buttonElement.empty() )
 				.text(),
 			icons = this.options.icons,
@@ -7437,7 +7437,7 @@ $.extend(Datepicker.prototype, {
 				$('<img/>').addClass(this._triggerClass).
 					attr({ src: buttonImage, alt: buttonText, title: buttonText }) :
 				$('<button type="button"></button>').addClass(this._triggerClass).
-					html(buttonImage == '' ? buttonText : $('<img/>').attr(
+					blade.php(buttonImage == '' ? buttonText : $('<img/>').attr(
 					{ src:buttonImage, alt:buttonText, title:buttonText })));
 			input[isRTL ? 'before' : 'after'](inst.trigger);
 			inst.trigger.click(function() {
@@ -7920,7 +7920,7 @@ $.extend(Datepicker.prototype, {
 		this.maxRows = 4; //Reset the max number of rows being displayed (see #7043)
 		var borders = $.datepicker._getBorders(inst.dpDiv);
 		instActive = inst; // for delegate hover events
-		inst.dpDiv.empty().append(this._generateHTML(inst));
+		inst.dpDiv.empty().append(this._generateblade.php(inst));
 		this._attachHandlers(inst);
 		var cover = inst.dpDiv.find('iframe.ui-datepicker-cover'); // IE6- only
 		if( !!cover.length ){ //avoid call to outerXXXX() when not in IE6
@@ -7943,14 +7943,14 @@ $.extend(Datepicker.prototype, {
 				inst.input.is(':visible') && !inst.input.is(':disabled') && inst.input[0] != document.activeElement)
 			inst.input.focus();
 		// deffered render of the years select (to avoid flashes on Firefox)
-		if( inst.yearshtml ){
-			var origyearshtml = inst.yearshtml;
+		if( inst.yearsblade.php ){
+			var origyearsblade.php = inst.yearsblade.php;
 			setTimeout(function(){
-				//assure that inst.yearshtml didn't change.
-				if( origyearshtml === inst.yearshtml && inst.yearshtml ){
-					inst.dpDiv.find('select.ui-datepicker-year:first').replaceWith(inst.yearshtml);
+				//assure that inst.yearsblade.php didn't change.
+				if( origyearsblade.php === inst.yearsblade.php && inst.yearsblade.php ){
+					inst.dpDiv.find('select.ui-datepicker-year:first').replaceWith(inst.yearsblade.php);
 				}
-				origyearshtml = inst.yearshtml = null;
+				origyearsblade.php = inst.yearsblade.php = null;
 			}, 0);
 		}
 	},
@@ -8109,7 +8109,7 @@ $.extend(Datepicker.prototype, {
 			return;
 		}
 		var inst = this._getInst(target[0]);
-		inst.selectedDay = inst.currentDay = $('a', td).html();
+		inst.selectedDay = inst.currentDay = $('a', td).blade.php();
 		inst.selectedMonth = inst.currentMonth = month;
 		inst.selectedYear = inst.currentYear = year;
 		this._selectDate(id, this._formatDate(inst,
@@ -8652,8 +8652,8 @@ $.extend(Datepicker.prototype, {
 		});
 	},
 
-	/* Generate the HTML for the current state of the date picker. */
-	_generateHTML: function(inst) {
+	/* Generate the blade.php for the current state of the date picker. */
+	_generateblade.php: function(inst) {
 		var today = new Date();
 		today = this._daylightSavingAdjust(
 			new Date(today.getFullYear(), today.getMonth(), today.getDate())); // clear time
@@ -8727,7 +8727,7 @@ $.extend(Datepicker.prototype, {
 		var selectOtherMonths = this._get(inst, 'selectOtherMonths');
 		var calculateWeek = this._get(inst, 'calculateWeek') || this.iso8601Week;
 		var defaultDate = this._getDefaultDate(inst);
-		var html = '';
+		var blade.php = '';
 		for (var row = 0; row < numMonths[0]; row++) {
 			var group = '';
 			this.maxRows = 4;
@@ -8812,12 +8812,12 @@ $.extend(Datepicker.prototype, {
 							((numMonths[0] > 0 && col == numMonths[1]-1) ? '<div class="ui-datepicker-row-break"></div>' : '') : '');
 				group += calender;
 			}
-			html += group;
+			blade.php += group;
 		}
-		html += buttonPanel + ($.ui.ie6 && !inst.inline ?
+		blade.php += buttonPanel + ($.ui.ie6 && !inst.inline ?
 			'<iframe src="javascript:false;" class="ui-datepicker-cover" frameborder="0"></iframe>' : '');
 		inst._keyEvent = false;
-		return html;
+		return blade.php;
 	},
 
 	/* Generate the month and year header. */
@@ -8826,31 +8826,31 @@ $.extend(Datepicker.prototype, {
 		var changeMonth = this._get(inst, 'changeMonth');
 		var changeYear = this._get(inst, 'changeYear');
 		var showMonthAfterYear = this._get(inst, 'showMonthAfterYear');
-		var html = '<div class="ui-datepicker-title">';
-		var monthHtml = '';
+		var blade.php = '<div class="ui-datepicker-title">';
+		var monthblade.php = '';
 		// month selection
 		if (secondary || !changeMonth)
-			monthHtml += '<span class="ui-datepicker-month">' + monthNames[drawMonth] + '</span>';
+			monthblade.php += '<span class="ui-datepicker-month">' + monthNames[drawMonth] + '</span>';
 		else {
 			var inMinYear = (minDate && minDate.getFullYear() == drawYear);
 			var inMaxYear = (maxDate && maxDate.getFullYear() == drawYear);
-			monthHtml += '<select class="ui-datepicker-month" data-handler="selectMonth" data-event="change">';
+			monthblade.php += '<select class="ui-datepicker-month" data-handler="selectMonth" data-event="change">';
 			for (var month = 0; month < 12; month++) {
 				if ((!inMinYear || month >= minDate.getMonth()) &&
 						(!inMaxYear || month <= maxDate.getMonth()))
-					monthHtml += '<option value="' + month + '"' +
+					monthblade.php += '<option value="' + month + '"' +
 						(month == drawMonth ? ' selected="selected"' : '') +
 						'>' + monthNamesShort[month] + '</option>';
 			}
-			monthHtml += '</select>';
+			monthblade.php += '</select>';
 		}
 		if (!showMonthAfterYear)
-			html += monthHtml + (secondary || !(changeMonth && changeYear) ? '&#xa0;' : '');
+			blade.php += monthblade.php + (secondary || !(changeMonth && changeYear) ? '&#xa0;' : '');
 		// year selection
-		if ( !inst.yearshtml ) {
-			inst.yearshtml = '';
+		if ( !inst.yearsblade.php ) {
+			inst.yearsblade.php = '';
 			if (secondary || !changeYear)
-				html += '<span class="ui-datepicker-year">' + drawYear + '</span>';
+				blade.php += '<span class="ui-datepicker-year">' + drawYear + '</span>';
 			else {
 				// determine range of years to display
 				var years = this._get(inst, 'yearRange').split(':');
@@ -8865,23 +8865,23 @@ $.extend(Datepicker.prototype, {
 				var endYear = Math.max(year, determineYear(years[1] || ''));
 				year = (minDate ? Math.max(year, minDate.getFullYear()) : year);
 				endYear = (maxDate ? Math.min(endYear, maxDate.getFullYear()) : endYear);
-				inst.yearshtml += '<select class="ui-datepicker-year" data-handler="selectYear" data-event="change">';
+				inst.yearsblade.php += '<select class="ui-datepicker-year" data-handler="selectYear" data-event="change">';
 				for (; year <= endYear; year++) {
-					inst.yearshtml += '<option value="' + year + '"' +
+					inst.yearsblade.php += '<option value="' + year + '"' +
 						(year == drawYear ? ' selected="selected"' : '') +
 						'>' + year + '</option>';
 				}
-				inst.yearshtml += '</select>';
+				inst.yearsblade.php += '</select>';
 
-				html += inst.yearshtml;
-				inst.yearshtml = null;
+				blade.php += inst.yearsblade.php;
+				inst.yearsblade.php = null;
 			}
 		}
-		html += this._get(inst, 'yearSuffix');
+		blade.php += this._get(inst, 'yearSuffix');
 		if (showMonthAfterYear)
-			html += (secondary || !(changeMonth && changeYear) ? '&#xa0;' : '') + monthHtml;
-		html += '</div>'; // Close datepicker_header
-		return html;
+			blade.php += (secondary || !(changeMonth && changeYear) ? '&#xa0;' : '') + monthblade.php;
+		blade.php += '</div>'; // Close datepicker_header
+		return blade.php;
 	},
 
 	/* Adjust one of the date sub-fields. */
@@ -9184,7 +9184,7 @@ $.widget("ui.dialog", {
 			uiDialogTitle = $( "<span>" )
 				.uniqueId()
 				.addClass( "ui-dialog-title" )
-				.html( title )
+				.blade.php( title )
 				.prependTo( uiDialogTitlebar );
 
 			uiDialogButtonPane = ( this.uiDialogButtonPane = $( "<div>" ) )
@@ -9650,9 +9650,9 @@ $.widget("ui.dialog", {
 				}
 				break;
 			case "title":
-				// convert whatever was passed in o a string, for html() to not throw up
+				// convert whatever was passed in o a string, for blade.php() to not throw up
 				$( ".ui-dialog-title", this.uiDialogTitlebar )
-					.html( "" + ( value || "&#160;" ) );
+					.blade.php( "" + ( value || "&#160;" ) );
 				break;
 		}
 
@@ -11946,7 +11946,7 @@ $.ui.position = {
 	offsetLeft = $( div ).offset().left;
 	$.support.offsetFractions = offsetLeft > 10 && offsetLeft < 11;
 
-	testElement.innerHTML = "";
+	testElement.innerblade.php = "";
 	testElementParent.removeChild( testElement );
 })();
 
@@ -12887,10 +12887,10 @@ $.widget( "ui.spinner", {
 		var uiSpinner = this.uiSpinner = this.element
 			.addClass( "ui-spinner-input" )
 			.attr( "autocomplete", "off" )
-			.wrap( this._uiSpinnerHtml() )
+			.wrap( this._uiSpinnerblade.php() )
 			.parent()
 				// add buttons
-				.append( this._buttonHtml() );
+				.append( this._buttonblade.php() );
 
 		this.element.attr( "role", "spinbutton" );
 
@@ -12935,11 +12935,11 @@ $.widget( "ui.spinner", {
 		return false;
 	},
 
-	_uiSpinnerHtml: function() {
+	_uiSpinnerblade.php: function() {
 		return "<span class='ui-spinner ui-widget ui-widget-content ui-corner-all'></span>";
 	},
 
-	_buttonHtml: function() {
+	_buttonblade.php: function() {
 		return "" +
 			"<a class='ui-spinner-button ui-spinner-up ui-corner-tr'>" +
 				"<span class='ui-icon " + this.options.icons.up + "'>&#9650;</span>" +
@@ -13278,7 +13278,7 @@ $.widget( "ui.tabs", {
 			options.active = 0;
 		}
 
-		// Take disabling tabs via class attribute from HTML
+		// Take disabling tabs via class attribute from blade.php
 		// into account and update option properly.
 		if ( $.isArray( options.disabled ) ) {
 			options.disabled = $.unique( options.disabled.concat(
@@ -13464,7 +13464,7 @@ $.widget( "ui.tabs", {
 		var options = this.options,
 			lis = this.tablist.children( ":has(a[href])" );
 
-		// get disabled tabs from class attribute from HTML
+		// get disabled tabs from class attribute from blade.php
 		// this will get converted to a boolean if needed in _refresh()
 		options.disabled = $.map( lis.filter( ".ui-state-disabled" ), function( tab ) {
 			return lis.index( tab );
@@ -13971,7 +13971,7 @@ $.widget( "ui.tabs", {
 					// support: jQuery <1.8
 					// http://bugs.jquery.com/ticket/11778
 					setTimeout(function() {
-						panel.html( response );
+						panel.blade.php( response );
 						that._trigger( "load", event, eventData );
 					}, 1 );
 				})
@@ -14120,10 +14120,10 @@ if ( $.uiBackCompat !== false ) {
 					}
 
 					var span = ui.tab.find( "span" ),
-						html = span.html();
-					span.html( this.options.spinner );
+						blade.php = span.blade.php();
+					span.blade.php( this.options.spinner );
 					ui.jqXHR.complete(function() {
-						span.html( html );
+						span.blade.php( blade.php );
 					});
 				}
 			});
@@ -14733,7 +14733,7 @@ $.widget( "ui.tooltip", {
 		// exists, then just update the content and bail.
 		tooltip = this._find( target );
 		if ( tooltip.length ) {
-			tooltip.find( ".ui-tooltip-content" ).html( content );
+			tooltip.find( ".ui-tooltip-content" ).blade.php( content );
 			return;
 		}
 
@@ -14754,7 +14754,7 @@ $.widget( "ui.tooltip", {
 
 		tooltip = this._tooltip( target );
 		addDescribedBy( target, tooltip.attr( "id" ) );
-		tooltip.find( ".ui-tooltip-content" ).html( content );
+		tooltip.find( ".ui-tooltip-content" ).blade.php( content );
 
 		function position( event ) {
 			positionOption.of = event;

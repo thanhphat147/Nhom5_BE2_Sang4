@@ -13,9 +13,17 @@ class CreateCartTable extends Migration
      */
     public function up()
     {
-        Schema::create('cart', function (Blueprint $table) {
+        Schema::create('carts', function (Blueprint $table) {
             $table->id();
+            $table->string('productname');
+            $table->string('productid');
+            $table->integer('price');
+            $table->integer('quantity');
+            $table->integer('total');
+            $table->string('userid');
             $table->timestamps();
+            $table->foreign('productid')->references('id')->on('products');
+            $table->foreign('userid')->references('id')->on('users');
         });
     }
 
@@ -26,6 +34,6 @@ class CreateCartTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cart');
+        Schema::dropIfExists('carts');
     }
 }

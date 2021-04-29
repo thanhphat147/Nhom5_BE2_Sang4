@@ -640,7 +640,7 @@
 								</ul>
 							</li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Household
+								<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sản Phẩm
 									<span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu multi-column columns-3">
@@ -670,53 +670,14 @@
 												</li>
 											</ul>
 										</div>
-										<div class="col-sm-6 multi-gd-img">
-											<ul class="multi-column-dropdown">
-												<li>
-													<a href="product2.html">Pet Care</a>
-												</li>
-												<li>
-													<a href="product2.html">Cleaning Accessories</a>
-												</li>
-												<li>
-													<a href="product2.html">Pooja Needs</a>
-												</li>
-												<li>
-													<a href="product2.html">Crackers</a>
-												</li>
-												<li>
-													<a href="product2.html">Festive Decoratives</a>
-												</li>
-												<li>
-													<a href="product2.html">Plasticware</a>
-												</li>
-												<li>
-													<a href="product2.html">Home Care</a>
-												</li>
-											</ul>
-										</div>
+										
 										<div class="clearfix"></div>
 									</div>
 								</ul>
 							</li>
-							<li class="">
-								<a class="nav-stylehead" href="faqs.html">Faqs</a>
-							</li>
-							<li class="dropdown">
-								<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Pages
-									<b class="caret"></b>
-								</a>
-								<ul class="dropdown-menu agile_short_dropdown">
-									<li>
-										<a href="icons.html">Web Icons</a>
-									</li>
-									<li>
-										<a href="typography.html">Typography</a>
-									</li>
-								</ul>
-							</li>
+						
 							<li>
-								<a class="" href="contact.html">Contact</a>
+								<a class="" href="contact.php">Contact</a>
 							</li>
 						</ul>
 					</div>

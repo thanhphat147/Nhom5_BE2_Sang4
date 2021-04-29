@@ -6,7 +6,7 @@
 			<div class="container">
 				<ul class="w3_short">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="index.blade.php">Home</a>
 						<i>|</i>
 					</li>
 					<li>About Us</li>

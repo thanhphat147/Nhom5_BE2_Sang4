@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE blade.php>
+<blade.php>
 
 <head>
 <title>Login</title>
@@ -16,4 +16,4 @@
 
 
 </body>
-</html>
+</blade.php>

@@ -16,7 +16,7 @@
 						</h3>
 						<p>Get flat
 							<span>10%</span> Cashback</p>
-						<a class="button2" href="product.html">Shop Now </a>
+						<a class="button2" href="product.blade.php">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -28,7 +28,7 @@
 						</h3>
 						<p>Get Upto
 							<span>30%</span> Off</p>
-						<a class="button2" href="product.html">Shop Now </a>
+						<a class="button2" href="product.blade.php">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -41,7 +41,7 @@
 						<p>Get Best Offer Upto
 							<span>20%</span>
 						</p>
-						<a class="button2" href="product.html">Shop Now </a>
+						<a class="button2" href="product.blade.php">Shop Now </a>
 					</div>
 				</div>
 			</div>
@@ -53,7 +53,7 @@
 						</h3>
 						<p>Get Now
 							<span>40%</span> Discount</p>
-						<a class="button2" href="product.html">Shop Now </a>
+						<a class="button2" href="product.blade.php">Shop Now </a>
 					</div>
 				</div>
 			</div>

@@ -56,7 +56,7 @@
 			init: function() {
 				
         		return this.each(function () {
-        			methods.appendHTML();
+        			methods.appendblade.php();
         			methods.setEventHandlers();      			
         			methods.initializeItems();
 				});
@@ -86,10 +86,10 @@
 			
 			
 			/******************************
-			Append HTML
+			Append blade.php
 			*******************************/			
 			
-			appendHTML: function() {
+			appendblade.php: function() {
 				
    			 	object.addClass("nbs-flexisel-ul");
    			 	object.wrap("<div class='nbs-flexisel-container'><div class='nbs-flexisel-inner'></div></div>");
@@ -171,7 +171,7 @@
 			*******************************/			
 			
 			setResponsiveEvents: function() {
-				var contentWidth = $('html').width();
+				var contentWidth = $('blade.php').width();
 				
 				if(settings.enableResponsiveBreakpoints == true) {
 					if(contentWidth < settings.responsiveBreakpoints.portrait.changePoint) {

@@ -9,7 +9,7 @@
         <!-- header-bot-->
         <div class="col-md-4 logo_agile">
             <h1>
-                <a href="index.html">
+                <a href="index.blade.php">
                     <span>G</span>rocery
                     <span>S</span>hoppy
                     <img src="images/logo2.png" alt=" ">
@@ -569,12 +569,12 @@
                     <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav menu__list">
                             <li>
-                                <a class="nav-stylehead" href="index.html">Home
+                                <a class="nav-stylehead" href="index.blade.php">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="">
-                                <a class="nav-stylehead" href="about.html">About Us</a>
+                                <a class="nav-stylehead" href="about.blade.php">About Us</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kitchen
@@ -585,50 +585,50 @@
                                         <div class="col-sm-4 multi-gd-img">
                                             <ul class="multi-column-dropdown">
                                                 <li>
-                                                    <a href="product.html">Bakery</a>
+                                                    <a href="product.blade.php">Bakery</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Baking Supplies</a>
+                                                    <a href="product.blade.php">Baking Supplies</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Coffee, Tea & Beverages</a>
+                                                    <a href="product.blade.php">Coffee, Tea & Beverages</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Dried Fruits, Nuts</a>
+                                                    <a href="product.blade.php">Dried Fruits, Nuts</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Sweets, Chocolate</a>
+                                                    <a href="product.blade.php">Sweets, Chocolate</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Spices & Masalas</a>
+                                                    <a href="product.blade.php">Spices & Masalas</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Jams, Honey & Spreads</a>
+                                                    <a href="product.blade.php">Jams, Honey & Spreads</a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-4 multi-gd-img">
                                             <ul class="multi-column-dropdown">
                                                 <li>
-                                                    <a href="product.html">Pickles</a>
+                                                    <a href="product.blade.php">Pickles</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Pasta & Noodles</a>
+                                                    <a href="product.blade.php">Pasta & Noodles</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Rice, Flour & Pulses</a>
+                                                    <a href="product.blade.php">Rice, Flour & Pulses</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Sauces & Cooking Pastes</a>
+                                                    <a href="product.blade.php">Sauces & Cooking Pastes</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Snack Foods</a>
+                                                    <a href="product.blade.php">Snack Foods</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Oils, Vinegars</a>
+                                                    <a href="product.blade.php">Oils, Vinegars</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product.html">Meat, Poultry & Seafood</a>
+                                                    <a href="product.blade.php">Meat, Poultry & Seafood</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -648,50 +648,50 @@
                                         <div class="col-sm-6 multi-gd-img">
                                             <ul class="multi-column-dropdown">
                                                 <li>
-                                                    <a href="product2.html">Kitchen & Dining</a>
+                                                    <a href="product2.blade.php">Kitchen & Dining</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Detergents</a>
+                                                    <a href="product2.blade.php">Detergents</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Utensil Cleaners</a>
+                                                    <a href="product2.blade.php">Utensil Cleaners</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Floor & Other Cleaners</a>
+                                                    <a href="product2.blade.php">Floor & Other Cleaners</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Disposables, Garbage Bag</a>
+                                                    <a href="product2.blade.php">Disposables, Garbage Bag</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Repellents & Fresheners</a>
+                                                    <a href="product2.blade.php">Repellents & Fresheners</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html"> Dishwash</a>
+                                                    <a href="product2.blade.php"> Dishwash</a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-6 multi-gd-img">
                                             <ul class="multi-column-dropdown">
                                                 <li>
-                                                    <a href="product2.html">Pet Care</a>
+                                                    <a href="product2.blade.php">Pet Care</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Cleaning Accessories</a>
+                                                    <a href="product2.blade.php">Cleaning Accessories</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Pooja Needs</a>
+                                                    <a href="product2.blade.php">Pooja Needs</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Crackers</a>
+                                                    <a href="product2.blade.php">Crackers</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Festive Decoratives</a>
+                                                    <a href="product2.blade.php">Festive Decoratives</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Plasticware</a>
+                                                    <a href="product2.blade.php">Plasticware</a>
                                                 </li>
                                                 <li>
-                                                    <a href="product2.html">Home Care</a>
+                                                    <a href="product2.blade.php">Home Care</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -700,7 +700,7 @@
                                 </ul>
                             </li>
                             <li class="">
-                                <a class="nav-stylehead" href="faqs.html">Faqs</a>
+                                <a class="nav-stylehead" href="faqs.blade.php">Faqs</a>
                             </li>
                             <li class="dropdown">
                                 <a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Pages
@@ -708,15 +708,15 @@
                                 </a>
                                 <ul class="dropdown-menu agile_short_dropdown">
                                     <li>
-                                        <a href="icons.html">Web Icons</a>
+                                        <a href="icons.blade.php">Web Icons</a>
                                     </li>
                                     <li>
-                                        <a href="typography.html">Typography</a>
+                                        <a href="typography.blade.php">Typography</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a class="" href="contact.html">Contact</a>
+                                <a class="" href="contact.blade.php">Contact</a>
                             </li>
                         </ul>
                     </div>

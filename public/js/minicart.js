@@ -1614,15 +1614,15 @@ exports.json = function(obj){
  */
 
 /**
- * Escape the given string of `html`.
+ * Escape the given string of `blade.php`.
  *
- * @param {String} html
+ * @param {String} blade.php
  * @return {String}
  * @api private
  */
 
-exports.escape = function(html){
-  return String(html)
+exports.escape = function(blade.php){
+  return String(blade.php)
     .replace(/&(?!#?[a-zA-Z0-9]+;)/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -1903,7 +1903,7 @@ var defaults = module.exports = {
 
     parent: (typeof document !== 'undefined') ? document.body : null,
 
-    action: 'checkout.html',
+    action: 'checkout.blade.php',
 
     target: '',
 
@@ -2460,7 +2460,7 @@ module.exports = (function (window, document) {
             /**
              * Add an event to an object and optionally adjust it's scope
              *
-             * @param obj {HTMLElement} The object to attach the event to
+             * @param obj {blade.phpElement} The object to attach the event to
              * @param type {string} The type of event excluding "on"
              * @param fn {function} The function
              * @param scope {object} Object to adjust the scope to (optional)
@@ -2478,7 +2478,7 @@ module.exports = (function (window, document) {
             /**
              * Remove an event from an object
              *
-             * @param obj {HTMLElement} The object to remove the event from
+             * @param obj {blade.phpElement} The object to remove the event from
              * @param type {string} The type of event excluding "on"
              * @param fn {function} The function
              */
@@ -2507,7 +2507,7 @@ module.exports = (function (window, document) {
             /**
              * Add an event to an object and optionally adjust it's scope (IE)
              *
-             * @param obj {HTMLElement} The object to attach the event to
+             * @param obj {blade.phpElement} The object to attach the event to
              * @param type {string} The type of event excluding "on"
              * @param fn {function} The function
              * @param scope {object} Object to adjust the scope to (optional)
@@ -2534,7 +2534,7 @@ module.exports = (function (window, document) {
             /**
              * Remove an event from an object (IE)
              *
-             * @param obj {HTMLElement} The object to remove the event from
+             * @param obj {blade.phpElement} The object to remove the event from
              * @param type {string} The type of event excluding "on"
              * @param fn {function} The function
              */
@@ -2782,7 +2782,7 @@ function View(model) {
     this.model = model;
     this.isShowing = false;
 
-    // HTML
+    // blade.php
     wrapper.id = config.name;
     config.parent.appendChild(wrapper);
 
@@ -2802,7 +2802,7 @@ function View(model) {
  */
 View.prototype.redraw = function redraw() {
     events.remove(this.el.querySelector('form'), 'submit', this.model.cart.checkout, this.model.cart);
-    this.el.innerHTML = template(config.template, this.model);
+    this.el.innerblade.php = template(config.template, this.model);
     events.add(this.el.querySelector('form'), 'submit', this.model.cart.checkout, this.model.cart);
 };
 
@@ -2840,7 +2840,7 @@ View.prototype.toggle = function toggle() {
 /**
  * Binds cart submit events to a form.
  *
- * @param {HTMLElement} form
+ * @param {blade.phpElement} form
  * @return {boolean}
  */
 View.prototype.bind = function bind(form) {

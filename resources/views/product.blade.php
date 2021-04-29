@@ -6,7 +6,7 @@
         <div class="container">
             <ul class="w3_short">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.blade.php">Home</a>
                     <i>|</i>
                 </li>
                 <li>Kitchen Products</li>
@@ -266,14 +266,14 @@
 									<img src="images/k1.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Zeeba Basmati Rice</a>
+										<a href="single.blade.php">Zeeba Basmati Rice</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$950.00</span>
@@ -305,7 +305,7 @@
 									<img src="images/k2.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -313,7 +313,7 @@
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Maiyas Gulab Jamun</a>
+										<a href="single.blade.php">Maiyas Gulab Jamun</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$137.00</span>
@@ -345,7 +345,7 @@
 									<img src="images/k3.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -353,7 +353,7 @@
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Lipton Green Tea</a>
+										<a href="single.blade.php">Lipton Green Tea</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$384.00</span>
@@ -390,14 +390,14 @@
 									<img src="images/k4.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Organicana Red Chilli</a>
+										<a href="single.blade.php">Organicana Red Chilli</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$70.00</span>
@@ -429,7 +429,7 @@
 									<img src="images/k5.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -437,7 +437,7 @@
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">MTR Black Pepper</a>
+										<a href="single.blade.php">MTR Black Pepper</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$85.00</span>
@@ -469,7 +469,7 @@
 									<img src="images/k6.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -477,7 +477,7 @@
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Chataka - Elaichi</a>
+										<a href="single.blade.php">Chataka - Elaichi</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$299.99</span>
@@ -514,14 +514,14 @@
 									<img src="images/k7.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Narulag, Less Sugar</a>
+										<a href="single.blade.php">Narulag, Less Sugar</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$220.00</span>
@@ -553,7 +553,7 @@
 									<img src="images/k8.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -561,7 +561,7 @@
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Kellogg's Chocos Fills</a>
+										<a href="single.blade.php">Kellogg's Chocos Fills</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$175.75</span>
@@ -593,7 +593,7 @@
 									<img src="images/k9.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -601,7 +601,7 @@
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Amul's India</a>
+										<a href="single.blade.php">Amul's India</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$134.00</span>
@@ -638,14 +638,14 @@
 									<img src="images/k10.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Snickers Chocolates</a>
+										<a href="single.blade.php">Snickers Chocolates</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$140.00</span>
@@ -677,7 +677,7 @@
 									<img src="images/k11.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -685,7 +685,7 @@
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Kissan Fruit Jam</a>
+										<a href="single.blade.php">Kissan Fruit Jam</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$123.00</span>
@@ -717,7 +717,7 @@
 									<img src="images/k12.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.blade.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -725,7 +725,7 @@
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">MTR Vegetable Pickle</a>
+										<a href="single.blade.php">MTR Vegetable Pickle</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">$104.00</span>
@@ -778,13 +778,13 @@
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s1.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Aashirvaad, 5g</a>
+									<a href="single.blade.php">Aashirvaad, 5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$220.00</h6>
@@ -812,13 +812,13 @@
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s4.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Kissan Tomato Ketchup, 950g</a>
+									<a href="single.blade.php">Kissan Tomato Ketchup, 950g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$99.00</h6>
@@ -846,13 +846,13 @@
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s2.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Madhur Pure Sugar, 1g</a>
+									<a href="single.blade.php">Madhur Pure Sugar, 1g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$69.00</h6>
@@ -880,13 +880,13 @@
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single2.html">
+								<a href="single2.blade.php">
 									<img src="images/s3.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single2.html">Surf Excel Liquid, 1.02L</a>
+									<a href="single2.blade.php">Surf Excel Liquid, 1.02L</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$187.00</h6>
@@ -914,13 +914,13 @@
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s8.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Cadbury Choclairs, 655.5g</a>
+									<a href="single.blade.php">Cadbury Choclairs, 655.5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$160.00</h6>
@@ -948,13 +948,13 @@
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single2.html">
+								<a href="single2.blade.php">
 									<img src="images/s6.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single2.html">Fair & Lovely, 80 g</a>
+									<a href="single2.blade.php">Fair & Lovely, 80 g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$121.60</h6>
@@ -982,13 +982,13 @@
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s5.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Sprite, 2.25L (Pack of 2)</a>
+									<a href="single.blade.php">Sprite, 2.25L (Pack of 2)</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$180.00</h6>
@@ -1016,13 +1016,13 @@
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single2.html">
+								<a href="single2.blade.php">
 									<img src="images/s9.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single2.html">Lakme Eyeconic Kajal, 0.35 g</a>
+									<a href="single2.blade.php">Lakme Eyeconic Kajal, 0.35 g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$153.00</h6>

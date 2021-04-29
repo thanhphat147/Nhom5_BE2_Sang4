@@ -4,14 +4,14 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE html>
-<html lang="zxx">
+<!DOCTYPE blade.php>
+<blade.php lang="zxx">
 
 <head>
 	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Single :: w3layouts</title>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/blade.php; charset=utf-8" />
 	<meta name="keywords" content="Grocery Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 	<script>
@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot-->
 			<div class="col-md-4 logo_agile">
 				<h1>
-					<a href="index.html">
+					<a href="index.blade.php">
 						<span>G</span>rocery
 						<span>S</span>hoppy
 						<img src="images/logo2.png" alt=" ">
@@ -610,12 +610,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav menu__list">
 								<li>
-									<a class="nav-stylehead" href="index.html">Home
+									<a class="nav-stylehead" href="index.blade.php">Home
 										<span class="sr-only">(current)</span>
 									</a>
 								</li>
 								<li class="">
-									<a class="nav-stylehead" href="about.html">About Us</a>
+									<a class="nav-stylehead" href="about.blade.php">About Us</a>
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kitchen
@@ -626,50 +626,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="col-sm-4 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product.html">Bakery</a>
+														<a href="product.blade.php">Bakery</a>
 													</li>
 													<li>
-														<a href="product.html">Baking Supplies</a>
+														<a href="product.blade.php">Baking Supplies</a>
 													</li>
 													<li>
-														<a href="product.html">Coffee, Tea & Beverages</a>
+														<a href="product.blade.php">Coffee, Tea & Beverages</a>
 													</li>
 													<li>
-														<a href="product.html">Dried Fruits, Nuts</a>
+														<a href="product.blade.php">Dried Fruits, Nuts</a>
 													</li>
 													<li>
-														<a href="product.html">Sweets, Chocolate</a>
+														<a href="product.blade.php">Sweets, Chocolate</a>
 													</li>
 													<li>
-														<a href="product.html">Spices & Masalas</a>
+														<a href="product.blade.php">Spices & Masalas</a>
 													</li>
 													<li>
-														<a href="product.html">Jams, Honey & Spreads</a>
+														<a href="product.blade.php">Jams, Honey & Spreads</a>
 													</li>
 												</ul>
 											</div>
 											<div class="col-sm-4 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product.html">Pickles</a>
+														<a href="product.blade.php">Pickles</a>
 													</li>
 													<li>
-														<a href="product.html">Pasta & Noodles</a>
+														<a href="product.blade.php">Pasta & Noodles</a>
 													</li>
 													<li>
-														<a href="product.html">Rice, Flour & Pulses</a>
+														<a href="product.blade.php">Rice, Flour & Pulses</a>
 													</li>
 													<li>
-														<a href="product.html">Sauces & Cooking Pastes</a>
+														<a href="product.blade.php">Sauces & Cooking Pastes</a>
 													</li>
 													<li>
-														<a href="product.html">Snack Foods</a>
+														<a href="product.blade.php">Snack Foods</a>
 													</li>
 													<li>
-														<a href="product.html">Oils, Vinegars</a>
+														<a href="product.blade.php">Oils, Vinegars</a>
 													</li>
 													<li>
-														<a href="product.html">Meat, Poultry & Seafood</a>
+														<a href="product.blade.php">Meat, Poultry & Seafood</a>
 													</li>
 												</ul>
 											</div>
@@ -689,50 +689,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="col-sm-6 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product2.html">Kitchen & Dining</a>
+														<a href="product2.blade.php">Kitchen & Dining</a>
 													</li>
 													<li>
-														<a href="product2.html">Detergents</a>
+														<a href="product2.blade.php">Detergents</a>
 													</li>
 													<li>
-														<a href="product2.html">Utensil Cleaners</a>
+														<a href="product2.blade.php">Utensil Cleaners</a>
 													</li>
 													<li>
-														<a href="product2.html">Floor & Other Cleaners</a>
+														<a href="product2.blade.php">Floor & Other Cleaners</a>
 													</li>
 													<li>
-														<a href="product2.html">Disposables, Garbage Bag</a>
+														<a href="product2.blade.php">Disposables, Garbage Bag</a>
 													</li>
 													<li>
-														<a href="product2.html">Repellents & Fresheners</a>
+														<a href="product2.blade.php">Repellents & Fresheners</a>
 													</li>
 													<li>
-														<a href="product2.html"> Dishwash</a>
+														<a href="product2.blade.php"> Dishwash</a>
 													</li>
 												</ul>
 											</div>
 											<div class="col-sm-6 multi-gd-img">
 												<ul class="multi-column-dropdown">
 													<li>
-														<a href="product2.html">Pet Care</a>
+														<a href="product2.blade.php">Pet Care</a>
 													</li>
 													<li>
-														<a href="product2.html">Cleaning Accessories</a>
+														<a href="product2.blade.php">Cleaning Accessories</a>
 													</li>
 													<li>
-														<a href="product2.html">Pooja Needs</a>
+														<a href="product2.blade.php">Pooja Needs</a>
 													</li>
 													<li>
-														<a href="product2.html">Crackers</a>
+														<a href="product2.blade.php">Crackers</a>
 													</li>
 													<li>
-														<a href="product2.html">Festive Decoratives</a>
+														<a href="product2.blade.php">Festive Decoratives</a>
 													</li>
 													<li>
-														<a href="product2.html">Plasticware</a>
+														<a href="product2.blade.php">Plasticware</a>
 													</li>
 													<li>
-														<a href="product2.html">Home Care</a>
+														<a href="product2.blade.php">Home Care</a>
 													</li>
 												</ul>
 											</div>
@@ -741,7 +741,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</ul>
 								</li>
 								<li>
-									<a class="nav-stylehead" href="faqs.html">Faqs</a>
+									<a class="nav-stylehead" href="faqs.blade.php">Faqs</a>
 								</li>
 								<li class="dropdown">
 									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Pages
@@ -749,15 +749,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</a>
 									<ul class="dropdown-menu agile_short_dropdown">
 										<li>
-											<a href="icons.html">Web Icons</a>
+											<a href="icons.blade.php">Web Icons</a>
 										</li>
 										<li>
-											<a href="typography.html">Typography</a>
+											<a href="typography.blade.php">Typography</a>
 										</li>
 									</ul>
 								</li>
 								<li>
-									<a class="" href="contact.html">Contact</a>
+									<a class="" href="contact.blade.php">Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -778,7 +778,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<ul class="w3_short">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="index.blade.php">Home</a>
 						<i>|</i>
 					</li>
 					<li>Single Page</li>
@@ -923,13 +923,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s1.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Aashirvaad, 5g</a>
+									<a href="single.blade.php">Aashirvaad, 5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$220.00</h6>
@@ -957,13 +957,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s4.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Kissan Tomato Ketchup, 950g</a>
+									<a href="single.blade.php">Kissan Tomato Ketchup, 950g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$99.00</h6>
@@ -991,13 +991,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s2.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Madhur Pure Sugar, 1g</a>
+									<a href="single.blade.php">Madhur Pure Sugar, 1g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$69.00</h6>
@@ -1025,13 +1025,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single2.html">
+								<a href="single2.blade.php">
 									<img src="images/s3.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single2.html">Surf Excel Liquid, 1.02L</a>
+									<a href="single2.blade.php">Surf Excel Liquid, 1.02L</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$187.00</h6>
@@ -1059,13 +1059,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s8.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Cadbury Choclairs, 655.5g</a>
+									<a href="single.blade.php">Cadbury Choclairs, 655.5g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$160.00</h6>
@@ -1093,13 +1093,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single2.html">
+								<a href="single2.blade.php">
 									<img src="images/s6.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single2.html">Fair & Lovely, 80 g</a>
+									<a href="single2.blade.php">Fair & Lovely, 80 g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$121.60</h6>
@@ -1127,13 +1127,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single.html">
+								<a href="single.blade.php">
 									<img src="images/s5.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single.html">Sprite, 2.25L (Pack of 2)</a>
+									<a href="single.blade.php">Sprite, 2.25L (Pack of 2)</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$180.00</h6>
@@ -1161,13 +1161,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3l-specilamk">
 							<div class="speioffer-agile">
-								<a href="single2.html">
+								<a href="single2.blade.php">
 									<img src="images/s9.jpg" alt="">
 								</a>
 							</div>
 							<div class="product-name-w3l">
 								<h4>
-									<a href="single2.html">Lakme Eyeconic Kajal, 0.35 g</a>
+									<a href="single2.blade.php">Lakme Eyeconic Kajal, 0.35 g</a>
 								</h4>
 								<div class="w3l-pricehkj">
 									<h6>$153.00</h6>
@@ -1269,44 +1269,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3>Categories</h3>
 						<ul>
 							<li>
-								<a href="product.html">Grocery</a>
+								<a href="product.blade.php">Grocery</a>
 							</li>
 							<li>
-								<a href="product.html">Fruits</a>
+								<a href="product.blade.php">Fruits</a>
 							</li>
 							<li>
-								<a href="product.html">Soft Drinks</a>
+								<a href="product.blade.php">Soft Drinks</a>
 							</li>
 							<li>
-								<a href="product2.html">Dishwashers</a>
+								<a href="product2.blade.php">Dishwashers</a>
 							</li>
 							<li>
-								<a href="product.html">Biscuits & Cookies</a>
+								<a href="product.blade.php">Biscuits & Cookies</a>
 							</li>
 							<li>
-								<a href="product2.html">Baby Diapers</a>
+								<a href="product2.blade.php">Baby Diapers</a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-xs-6 footer-grids agile-secomk">
 						<ul>
 							<li>
-								<a href="product.html">Snacks & Beverages</a>
+								<a href="product.blade.php">Snacks & Beverages</a>
 							</li>
 							<li>
-								<a href="product.html">Bread & Bakery</a>
+								<a href="product.blade.php">Bread & Bakery</a>
 							</li>
 							<li>
-								<a href="product.html">Sweets</a>
+								<a href="product.blade.php">Sweets</a>
 							</li>
 							<li>
-								<a href="product.html">Chocolates & Biscuits</a>
+								<a href="product.blade.php">Chocolates & Biscuits</a>
 							</li>
 							<li>
-								<a href="product2.html">Personal Care</a>
+								<a href="product2.blade.php">Personal Care</a>
 							</li>
 							<li>
-								<a href="product.html">Dried Fruits & Nuts</a>
+								<a href="product.blade.php">Dried Fruits & Nuts</a>
 							</li>
 						</ul>
 					</div>
@@ -1319,22 +1319,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3>Quick Links</h3>
 						<ul>
 							<li>
-								<a href="about.html">About Us</a>
+								<a href="about.blade.php">About Us</a>
 							</li>
 							<li>
-								<a href="contact.html">Contact Us</a>
+								<a href="contact.blade.php">Contact Us</a>
 							</li>
 							<li>
-								<a href="help.html">Help</a>
+								<a href="help.blade.php">Help</a>
 							</li>
 							<li>
-								<a href="faqs.html">Faqs</a>
+								<a href="faqs.blade.php">Faqs</a>
 							</li>
 							<li>
-								<a href="terms.html">Terms of use</a>
+								<a href="terms.blade.php">Terms of use</a>
 							</li>
 							<li>
-								<a href="privacy.html">Privacy Policy</a>
+								<a href="privacy.blade.php">Privacy Policy</a>
 							</li>
 						</ul>
 					</div>
@@ -1410,106 +1410,106 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5>Popular Brands</h5>
 					<ul>
 						<li>
-							<a href="product.html">Aashirvaad</a>
+							<a href="product.blade.php">Aashirvaad</a>
 						</li>
 						<li>
-							<a href="product.html">Amul</a>
+							<a href="product.blade.php">Amul</a>
 						</li>
 						<li>
-							<a href="product.html">Bingo</a>
+							<a href="product.blade.php">Bingo</a>
 						</li>
 						<li>
-							<a href="product.html">Boost</a>
+							<a href="product.blade.php">Boost</a>
 						</li>
 						<li>
-							<a href="product.html">Durex</a>
+							<a href="product.blade.php">Durex</a>
 						</li>
 						<li>
-							<a href="product.html"> Maggi</a>
+							<a href="product.blade.php"> Maggi</a>
 						</li>
 						<li>
-							<a href="product.html">Glucon-D</a>
+							<a href="product.blade.php">Glucon-D</a>
 						</li>
 						<li>
-							<a href="product.html">Horlicks</a>
+							<a href="product.blade.php">Horlicks</a>
 						</li>
 						<li>
-							<a href="product2.html">Head & Shoulders</a>
+							<a href="product2.blade.php">Head & Shoulders</a>
 						</li>
 						<li>
-							<a href="product2.html">Dove</a>
+							<a href="product2.blade.php">Dove</a>
 						</li>
 						<li>
-							<a href="product2.html">Dettol</a>
+							<a href="product2.blade.php">Dettol</a>
 						</li>
 						<li>
-							<a href="product2.html">Dabur</a>
+							<a href="product2.blade.php">Dabur</a>
 						</li>
 						<li>
-							<a href="product2.html">Colgate</a>
+							<a href="product2.blade.php">Colgate</a>
 						</li>
 						<li>
-							<a href="product.html">Coca-Cola</a>
+							<a href="product.blade.php">Coca-Cola</a>
 						</li>
 						<li>
-							<a href="product2.html">Closeup</a>
+							<a href="product2.blade.php">Closeup</a>
 						</li>
 						<li>
-							<a href="product2.html"> Cinthol</a>
+							<a href="product2.blade.php"> Cinthol</a>
 						</li>
 						<li>
-							<a href="product.html">Cadbury</a>
+							<a href="product.blade.php">Cadbury</a>
 						</li>
 						<li>
-							<a href="product.html">Bru</a>
+							<a href="product.blade.php">Bru</a>
 						</li>
 						<li>
-							<a href="product.html">Bournvita</a>
+							<a href="product.blade.php">Bournvita</a>
 						</li>
 						<li>
-							<a href="product.html">Tang</a>
+							<a href="product.blade.php">Tang</a>
 						</li>
 						<li>
-							<a href="product.html">Pears</a>
+							<a href="product.blade.php">Pears</a>
 						</li>
 						<li>
-							<a href="product.html">Oreo</a>
+							<a href="product.blade.php">Oreo</a>
 						</li>
 						<li>
-							<a href="product.html"> Taj Mahal</a>
+							<a href="product.blade.php"> Taj Mahal</a>
 						</li>
 						<li>
-							<a href="product.html">Sprite</a>
+							<a href="product.blade.php">Sprite</a>
 						</li>
 						<li>
-							<a href="product.html">Thums Up</a>
+							<a href="product.blade.php">Thums Up</a>
 						</li>
 						<li>
-							<a href="product2.html">Fair & Lovely</a>
+							<a href="product2.blade.php">Fair & Lovely</a>
 						</li>
 						<li>
-							<a href="product2.html">Lakme</a>
+							<a href="product2.blade.php">Lakme</a>
 						</li>
 						<li>
-							<a href="product.html">Tata</a>
+							<a href="product.blade.php">Tata</a>
 						</li>
 						<li>
-							<a href="product2.html">Sunfeast</a>
+							<a href="product2.blade.php">Sunfeast</a>
 						</li>
 						<li>
-							<a href="product2.html">Sunsilk</a>
+							<a href="product2.blade.php">Sunsilk</a>
 						</li>
 						<li>
-							<a href="product.html">Patanjali</a>
+							<a href="product.blade.php">Patanjali</a>
 						</li>
 						<li>
-							<a href="product.html">MTR</a>
+							<a href="product.blade.php">MTR</a>
 						</li>
 						<li>
-							<a href="product.html">Kissan</a>
+							<a href="product.blade.php">Kissan</a>
 						</li>
 						<li>
-							<a href="product2.html"> Lipton</a>
+							<a href="product2.blade.php"> Lipton</a>
 						</li>
 					</ul>
 				</div>
@@ -1647,7 +1647,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$(".scroll").click(function (event) {
 				event.preventDefault();
 
-				$('html,body').animate({
+				$('blade.php,body').animate({
 					scrollTop: $(this.hash).offset().top
 				}, 1000);
 			});
@@ -1729,4 +1729,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </body>
 
-</html>
+</blade.php>

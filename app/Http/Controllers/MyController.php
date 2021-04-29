@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
 
 class MyController extends Controller
 {
@@ -33,6 +34,11 @@ class MyController extends Controller
     // public function index($id="phat") {
     //     return 'User'.$id;
     // }
+
+    public function getAllProduct() {
+        $products = Product::all();
+        return view('index', ['products' => $products]);
+    }
 
     public function admin() {
         return "Hello admin";

@@ -69,44 +69,44 @@
                     <h3>Categories</h3>
                     <ul>
                         <li>
-                            <a href="product.html">Grocery</a>
+                            <a href="product.blade.php">Grocery</a>
                         </li>
                         <li>
-                            <a href="product.html">Fruits</a>
+                            <a href="product.blade.php">Fruits</a>
                         </li>
                         <li>
-                            <a href="product.html">Soft Drinks</a>
+                            <a href="product.blade.php">Soft Drinks</a>
                         </li>
                         <li>
-                            <a href="product2.html">Dishwashers</a>
+                            <a href="product2.blade.php">Dishwashers</a>
                         </li>
                         <li>
-                            <a href="product.html">Biscuits & Cookies</a>
+                            <a href="product.blade.php">Biscuits & Cookies</a>
                         </li>
                         <li>
-                            <a href="product2.html">Baby Diapers</a>
+                            <a href="product2.blade.php">Baby Diapers</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xs-6 footer-grids agile-secomk">
                     <ul>
                         <li>
-                            <a href="product.html">Snacks & Beverages</a>
+                            <a href="product.blade.php">Snacks & Beverages</a>
                         </li>
                         <li>
-                            <a href="product.html">Bread & Bakery</a>
+                            <a href="product.blade.php">Bread & Bakery</a>
                         </li>
                         <li>
-                            <a href="product.html">Sweets</a>
+                            <a href="product.blade.php">Sweets</a>
                         </li>
                         <li>
-                            <a href="product.html">Chocolates & Biscuits</a>
+                            <a href="product.blade.php">Chocolates & Biscuits</a>
                         </li>
                         <li>
-                            <a href="product2.html">Personal Care</a>
+                            <a href="product2.blade.php">Personal Care</a>
                         </li>
                         <li>
-                            <a href="product.html">Dried Fruits & Nuts</a>
+                            <a href="product.blade.php">Dried Fruits & Nuts</a>
                         </li>
                     </ul>
                 </div>
@@ -119,22 +119,22 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li>
-                            <a href="about.html">About Us</a>
+                            <a href="about.blade.php">About Us</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="contact.blade.php">Contact Us</a>
                         </li>
                         <li>
-                            <a href="help.html">Help</a>
+                            <a href="help.blade.php">Help</a>
                         </li>
                         <li>
-                            <a href="faqs.html">Faqs</a>
+                            <a href="faqs.blade.php">Faqs</a>
                         </li>
                         <li>
-                            <a href="terms.html">Terms of use</a>
+                            <a href="terms.blade.php">Terms of use</a>
                         </li>
                         <li>
-                            <a href="privacy.html">Privacy Policy</a>
+                            <a href="privacy.blade.php">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>
@@ -210,106 +210,106 @@
                 <h5>Popular Brands</h5>
                 <ul>
                     <li>
-                        <a href="product.html">Aashirvaad</a>
+                        <a href="product.blade.php">Aashirvaad</a>
                     </li>
                     <li>
-                        <a href="product.html">Amul</a>
+                        <a href="product.blade.php">Amul</a>
                     </li>
                     <li>
-                        <a href="product.html">Bingo</a>
+                        <a href="product.blade.php">Bingo</a>
                     </li>
                     <li>
-                        <a href="product.html">Boost</a>
+                        <a href="product.blade.php">Boost</a>
                     </li>
                     <li>
-                        <a href="product.html">Durex</a>
+                        <a href="product.blade.php">Durex</a>
                     </li>
                     <li>
-                        <a href="product.html"> Maggi</a>
+                        <a href="product.blade.php"> Maggi</a>
                     </li>
                     <li>
-                        <a href="product.html">Glucon-D</a>
+                        <a href="product.blade.php">Glucon-D</a>
                     </li>
                     <li>
-                        <a href="product.html">Horlicks</a>
+                        <a href="product.blade.php">Horlicks</a>
                     </li>
                     <li>
-                        <a href="product2.html">Head & Shoulders</a>
+                        <a href="product2.blade.php">Head & Shoulders</a>
                     </li>
                     <li>
-                        <a href="product2.html">Dove</a>
+                        <a href="product2.blade.php">Dove</a>
                     </li>
                     <li>
-                        <a href="product2.html">Dettol</a>
+                        <a href="product2.blade.php">Dettol</a>
                     </li>
                     <li>
-                        <a href="product2.html">Dabur</a>
+                        <a href="product2.blade.php">Dabur</a>
                     </li>
                     <li>
-                        <a href="product2.html">Colgate</a>
+                        <a href="product2.blade.php">Colgate</a>
                     </li>
                     <li>
-                        <a href="product.html">Coca-Cola</a>
+                        <a href="product.blade.php">Coca-Cola</a>
                     </li>
                     <li>
-                        <a href="product2.html">Closeup</a>
+                        <a href="product2.blade.php">Closeup</a>
                     </li>
                     <li>
-                        <a href="product2.html"> Cinthol</a>
+                        <a href="product2.blade.php"> Cinthol</a>
                     </li>
                     <li>
-                        <a href="product.html">Cadbury</a>
+                        <a href="product.blade.php">Cadbury</a>
                     </li>
                     <li>
-                        <a href="product.html">Bru</a>
+                        <a href="product.blade.php">Bru</a>
                     </li>
                     <li>
-                        <a href="product.html">Bournvita</a>
+                        <a href="product.blade.php">Bournvita</a>
                     </li>
                     <li>
-                        <a href="product.html">Tang</a>
+                        <a href="product.blade.php">Tang</a>
                     </li>
                     <li>
-                        <a href="product.html">Pears</a>
+                        <a href="product.blade.php">Pears</a>
                     </li>
                     <li>
-                        <a href="product.html">Oreo</a>
+                        <a href="product.blade.php">Oreo</a>
                     </li>
                     <li>
-                        <a href="product.html"> Taj Mahal</a>
+                        <a href="product.blade.php"> Taj Mahal</a>
                     </li>
                     <li>
-                        <a href="product.html">Sprite</a>
+                        <a href="product.blade.php">Sprite</a>
                     </li>
                     <li>
-                        <a href="product.html">Thums Up</a>
+                        <a href="product.blade.php">Thums Up</a>
                     </li>
                     <li>
-                        <a href="product2.html">Fair & Lovely</a>
+                        <a href="product2.blade.php">Fair & Lovely</a>
                     </li>
                     <li>
-                        <a href="product2.html">Lakme</a>
+                        <a href="product2.blade.php">Lakme</a>
                     </li>
                     <li>
-                        <a href="product.html">Tata</a>
+                        <a href="product.blade.php">Tata</a>
                     </li>
                     <li>
-                        <a href="product2.html">Sunfeast</a>
+                        <a href="product2.blade.php">Sunfeast</a>
                     </li>
                     <li>
-                        <a href="product2.html">Sunsilk</a>
+                        <a href="product2.blade.php">Sunsilk</a>
                     </li>
                     <li>
-                        <a href="product.html">Patanjali</a>
+                        <a href="product.blade.php">Patanjali</a>
                     </li>
                     <li>
-                        <a href="product.html">MTR</a>
+                        <a href="product.blade.php">MTR</a>
                     </li>
                     <li>
-                        <a href="product.html">Kissan</a>
+                        <a href="product.blade.php">Kissan</a>
                     </li>
                     <li>
-                        <a href="product2.html"> Lipton</a>
+                        <a href="product2.blade.php"> Lipton</a>
                     </li>
                 </ul>
             </div>
@@ -497,7 +497,7 @@
         $(".scroll").click(function (event) {
             event.preventDefault();
 
-            $('html,body').animate({
+            $('blade.php,body').animate({
                 scrollTop: $(this.hash).offset().top
             }, 1000);
         });

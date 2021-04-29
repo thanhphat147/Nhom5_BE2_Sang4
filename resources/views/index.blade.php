@@ -241,15 +241,17 @@
 			</div>
 			<!-- //product left -->
 			<!-- product right -->
+	
 			<div class="agileinfo-ads-display col-md-9">
 				<div class="wrapper">
 					<!-- first section (nuts) -->
 					<div class="product-sec1">
-						<h3 class="heading-tittle">Nuts</h3>
+						<h3 class="heading-tittle">THỊT, CÁ, TRỨNG</h3>
+						@foreach($products as $product)
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/m1.jpg" alt="">
+									<img src="{{ URL::asset('"images/" . {{ $product->image }} ') }}" alt=""> 
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -259,11 +261,10 @@
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">Almonds, 100g</a>
+										<a href="single.html">{{ $product->productname }}</a>
 									</h4>
 									<div class="info-product-price">
-										<span class="item_price">$149.00</span>
-										<del>$280.00</del>
+										<span class="item_price">{{ $product->price }}</span>
 									</div>
 									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 										<form action="#" method="post">
@@ -285,7 +286,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 product-men">
+						
+						{{-- <div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
 									<img src="images/m2.jpg" alt="">
@@ -364,7 +366,8 @@
 
 								</div>
 							</div>
-						</div>
+						</div> --}}
+						@endforeach
 						<div class="clearfix"></div>
 					</div>
 					<!-- //first section (nuts) -->

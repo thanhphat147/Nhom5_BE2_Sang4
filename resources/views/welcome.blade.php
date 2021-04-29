@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!DOCTYPE blade.php>
+<blade.php lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
 
         <!-- Styles -->
         <style>
-            html, body {
+            blade.php, body {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -97,4 +97,4 @@
             </div>
         </div>
     </body>
-</html>
+</blade.php>

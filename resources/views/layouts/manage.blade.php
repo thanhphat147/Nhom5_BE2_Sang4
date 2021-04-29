@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<!DOCTYPE blade.php>
+<blade.php lang="zxx">
 
 <head>
     <title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Home :: w3layouts</title>
     <!--/tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/blade.php; charset=utf-8" />
     <meta name="keywords" content="Grocery Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script>
@@ -37,4 +37,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 @include('partial.footer');
 </body>
 
-</html>
+</blade.php>

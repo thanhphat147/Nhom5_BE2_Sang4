@@ -6,7 +6,7 @@
 			<div class="container">
 				<ul class="w3_short">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="index.blade.php">Home</a>
 						<i>|</i>
 					</li>
 					<li>Checkout</li>
@@ -48,7 +48,7 @@
 							<tr class="rem1">
 								<td class="invert">1</td>
 								<td class="invert-image">
-									<a href="single2.html">
+									<a href="single2.blade.php">
 										<img src="images/a7.jpg" alt=" " class="img-responsive">
 									</a>
 								</td>
@@ -74,7 +74,7 @@
 							<tr class="rem2">
 								<td class="invert">2</td>
 								<td class="invert-image">
-									<a href="single2.html">
+									<a href="single2.blade.php">
 										<img src="images/s6.jpg" alt=" " class="img-responsive">
 									</a>
 								</td>
@@ -100,7 +100,7 @@
 							<tr class="rem3">
 								<td class="invert">3</td>
 								<td class="invert-image">
-									<a href="single.html">
+									<a href="single.blade.php">
 										<img src="images/s5.jpg" alt=" " class="img-responsive">
 									</a>
 								</td>
@@ -130,7 +130,7 @@
 			<div class="checkout-left">
 				<div class="address_form_agile">
 					<h4>Add a new Details</h4>
-					<form action="payment.html" method="post" class="creditly-card-form agileinfo_form">
+					<form action="payment.blade.php" method="post" class="creditly-card-form agileinfo_form">
 						<div class="creditly-wrapper wthree, w3_agileits_wrapper">
 							<div class="information-wrapper">
 								<div class="first-row">
@@ -168,7 +168,7 @@
 						</div>
 					</form>
 					<div class="checkout-right-basket">
-						<a href="payment.html">Make a Payment
+						<a href="payment.blade.php">Make a Payment
 							<span class="fa fa-hand-o-right" aria-hidden="true"></span>
 						</a>
 					</div>

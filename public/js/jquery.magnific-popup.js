@@ -49,11 +49,11 @@ var mfp, // As we have only one instance of MagnificPopup object, we define it l
 var _mfpOn = function(name, f) {
 		mfp.ev.on(NS + name + EVENT_NS, f);
 	},
-	_getEl = function(className, appendTo, html, raw) {
+	_getEl = function(className, appendTo, blade.php, raw) {
 		var el = document.createElement('div');
 		el.className = 'mfp-'+className;
-		if(html) {
-			el.innerHTML = html;
+		if(blade.php) {
+			el.innerblade.php = blade.php;
 		}
 		if(!raw) {
 			el = $(el);
@@ -172,7 +172,7 @@ MagnificPopup.prototype = {
 
 		// if popup is already opened - we just update the content
 		if(mfp.isOpen) {
-			mfp.updateItemHTML();
+			mfp.updateItemblade.php();
 			return;
 		}
 		
@@ -321,7 +321,7 @@ MagnificPopup.prototype = {
 				windowStyles.overflow = 'hidden';
 			} else {
 				// ie7 double-scroll bug
-				$('body, html').css('overflow', 'hidden');
+				$('body, blade.php').css('overflow', 'hidden');
 			}
 		}
 
@@ -336,13 +336,13 @@ MagnificPopup.prototype = {
 		}
 
 		// add content
-		mfp.updateItemHTML();
+		mfp.updateItemblade.php();
 
 		_mfpTrigger('BuildControls');
 
 
 		// remove scrollbar, add margin e.t.c
-		$('html').css(windowStyles);
+		$('blade.php').css(windowStyles);
 		
 		// add everything to DOM
 		mfp.bgOverlay.add(mfp.wrap).prependTo( document.body );
@@ -415,11 +415,11 @@ MagnificPopup.prototype = {
 		if(mfp.fixedContentPos) {
 			var windowStyles = {marginRight: ''};
 			if(mfp.isIE7) {
-				$('body, html').css('overflow', '');
+				$('body, blade.php').css('overflow', '');
 			} else {
 				windowStyles.overflow = '';
 			}
-			$('html').css(windowStyles);
+			$('blade.php').css(windowStyles);
 		}
 		
 		_document.off('keyup' + EVENT_NS + ' focusin' + EVENT_NS);
@@ -472,7 +472,7 @@ MagnificPopup.prototype = {
 	/**
 	 * Set content of popup based on current index
 	 */
-	updateItemHTML: function() {
+	updateItemblade.php: function() {
 		var item = mfp.items[mfp.index];
 
 		// Detach and perform modifications
@@ -531,7 +531,7 @@ MagnificPopup.prototype = {
 
 
 	/**
-	 * Set HTML content of popup
+	 * Set blade.php content of popup
 	 */
 	appendContent: function(newContent, type) {
 		mfp.content = newContent;
@@ -693,7 +693,7 @@ MagnificPopup.prototype = {
 			status = data.status;
 			text = data.text;
 
-			mfp.preloader.html(text);
+			mfp.preloader.blade.php(text);
 
 			mfp.preloader.find('a').on('click', function(e) {
 				e.stopImmediatePropagation();
@@ -796,7 +796,7 @@ MagnificPopup.prototype = {
 				}
 
 			} else {
-				template.find(EVENT_NS + '-'+key).html(value);
+				template.find(EVENT_NS + '-'+key).blade.php(value);
 			}
 		});
 	},
@@ -857,7 +857,7 @@ $.magnificPopup = {
 	defaults: {   
 
 		// Info about options is in docs:
-		// http://dimsemenov.com/plugins/magnific-popup/documentation.html#options
+		// http://dimsemenov.com/plugins/magnific-popup/documentation.blade.php#options
 		
 		disableOn: 0,	
 
@@ -1795,17 +1795,17 @@ $.magnificPopup.registerModule('gallery', {
 		next: function() {
 			mfp.direction = true;
 			mfp.index = _getLoopedId(mfp.index + 1);
-			mfp.updateItemHTML();
+			mfp.updateItemblade.php();
 		},
 		prev: function() {
 			mfp.direction = false;
 			mfp.index = _getLoopedId(mfp.index - 1);
-			mfp.updateItemHTML();
+			mfp.updateItemblade.php();
 		},
 		goTo: function(newIndex) {
 			mfp.direction = (newIndex >= mfp.index);
 			mfp.index = newIndex;
-			mfp.updateItemHTML();
+			mfp.updateItemblade.php();
 		},
 		preloadNearbyImages: function() {
 			var p = mfp.st.gallery.preload,

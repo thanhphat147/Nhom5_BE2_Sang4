@@ -13,9 +13,14 @@ class CreateReviewTable extends Migration
      */
     public function up()
     {
-        Schema::create('review', function (Blueprint $table) {
-            $table->id();
+        Schema::create('reviews', function (Blueprint $table) {
+            $table->string('productid');
+            $table->string('transactionid');
+            $table->string('productname');
+            $table->integer('rating');
+            $table->longText('comment');
             $table->timestamps();
+            $table->foreign('transactionid')->references('id')->on('transactions');
         });
     }
 
@@ -26,6 +31,6 @@ class CreateReviewTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('review');
+        Schema::dropIfExists('reviews');
     }
 }

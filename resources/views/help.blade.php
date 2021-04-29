@@ -21,7 +21,7 @@
 						<input type="submit" value="Submit">
 					</form>
 					<h5>OR</h5>
-					<a href="contact.html">Contact Us</a>
+					<a href="contact.blade.php">Contact Us</a>
 				</div>
 				<div class="col-xs-5 agile-right-help">
 					<img src="images/contact2.jpg" alt=" ">
