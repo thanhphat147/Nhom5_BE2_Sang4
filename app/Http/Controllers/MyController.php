@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\Catalog;
 
 class MyController extends Controller
 {
@@ -37,7 +38,8 @@ class MyController extends Controller
 
     public function getAllProduct() {
         $products = Product::all();
-        return view('index', ['products' => $products]);
+        $catalogs = Catalog::all();
+        return view('index', ['products' => $products],['catalogs' => $catalogs]);
     }
 
     public function admin() {
@@ -45,5 +47,12 @@ class MyController extends Controller
     }
     public function login() {
         return view("login");
+    }
+
+
+    public function getProductByCatalog($id)
+    {
+        $products = Catalog::find($id)->product;
+        return view('catelogy', ['products' => $products]);
     }
 }

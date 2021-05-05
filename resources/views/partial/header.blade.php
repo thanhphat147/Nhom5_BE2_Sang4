@@ -647,27 +647,12 @@
 									<div class="agile_inner_drop_nav_info">
 										<div class="col-sm-6 multi-gd-img">
 											<ul class="multi-column-dropdown">
+												@foreach ($catalogs as $item)
 												<li>
-													<a href="product2.html">Kitchen & Dining</a>
+													<a href="{{ url('/catelogy/sp' . $item->id )}}" >{{ $item->name }}</a>
 												</li>
-												<li>
-													<a href="product2.html">Detergents</a>
-												</li>
-												<li>
-													<a href="product2.html">Utensil Cleaners</a>
-												</li>
-												<li>
-													<a href="product2.html">Floor & Other Cleaners</a>
-												</li>
-												<li>
-													<a href="product2.html">Disposables, Garbage Bag</a>
-												</li>
-												<li>
-													<a href="product2.html">Repellents & Fresheners</a>
-												</li>
-												<li>
-													<a href="product2.html"> Dishwash</a>
-												</li>
+												@endforeach
+												
 											</ul>
 										</div>
 										

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'MyController@getAllProduct');
+Route::get('/catelogy/sp{id}', 'MyController@getProductByCatalog');
 
 
 //tham so khong bat buoc
