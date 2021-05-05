@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th5 05, 2021 lúc 01:03 AM
--- Phiên bản máy phục vụ: 8.0.21
--- Phiên bản PHP: 7.3.21
+-- Máy chủ: 127.0.0.1:3309
+-- Thời gian đã tạo: Th5 05, 2021 lúc 02:46 AM
+-- Phiên bản máy phục vụ: 10.4.10-MariaDB
+-- Phiên bản PHP: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -29,12 +30,12 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `carts`;
 CREATE TABLE IF NOT EXISTS `carts` (
-  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `productname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `productid` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `price` int NOT NULL,
-  `quantity` int NOT NULL,
-  `total` int NOT NULL,
+  `price` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `total` int(11) NOT NULL,
   `userid` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -51,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `carts` (
 
 DROP TABLE IF EXISTS `catalogs`;
 CREATE TABLE IF NOT EXISTS `catalogs` (
-  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -67,9 +68,9 @@ CREATE TABLE IF NOT EXISTS `catalogs` (
 
 DROP TABLE IF EXISTS `migrations`;
 CREATE TABLE IF NOT EXISTS `migrations` (
-  `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `batch` int NOT NULL,
+  `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -94,27 +95,34 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 
 DROP TABLE IF EXISTS `products`;
 CREATE TABLE IF NOT EXISTS `products` (
-  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `productname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `producttype` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `price` int NOT NULL,
+  `price` int(11) NOT NULL,
   `image` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `catalogid` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `products_catalogid_foreign` (`catalogid`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `products`
 --
 
 INSERT INTO `products` (`id`, `productname`, `producttype`, `description`, `price`, `image`, `catalogid`, `created_at`, `updated_at`) VALUES
-(1, 'Hộp 10 trứng gà tươi QLEgg', 'Thịt, cá, tôm, trứng', '', 27000, 't3.jpg', 'nQqNvesBbA', NULL, NULL),
-(2, 'Ba rọi heo khay 500g', 'Thịt, cá, tôm, trứng', '', 96000, 't1a.jpg', 'Y5YtnqmWrk', NULL, NULL),
-(3, 'Thịt cổ bò Úc Pacow khay 250g', 'Thịt, cá, tôm, trứng', '', 87000, 't2a.jpg', 'CabeFo2rST', NULL, NULL);
+(1, 'Ba rọi heo khay 500g', 'Thịt, cá, tôm, trứng', '', 96000, 't1.jpg', 'Thịt ba rọi heo CP được sản xuất từ hệ thống được kiểm soát chặt chẽ theo nguyên tắc chuỗi khép kín “Thức ăn chăn nuôi - Trang trại chăn nuôi – Nhà máy chế biến thực phẩm”. ', NULL, NULL),
+(2, 'Thịt cổ bò Úc Pacow khay 250g', 'Thịt, cá, tôm, trứng', '', 87000, 't2.jpg', 'Thịt cổ bò Úc Pascow với thành phần là thịt bò mát 100% thiên nhiên, nguồn gốc rõ ràng đảm bảo an toàn vệ sinh thực phẩm, chất lượng cao. Thịt bò Úc Pacow đạt chuẩn từ trang trại tới bàn ăn.', NULL, NULL),
+(3, 'Nạc dăm heo khay 500g', 'Thịt, cá, tôm, trứng', '', 82000, 't3.jpg', 'Nạc dăm heo CP được sản xuất từ hệ thống được kiểm soát chặt chẽ theo nguyên tắc chuỗi khép kín “Thức ăn chăn nuôi - Trang trại chăn nuôi – Nhà máy chế biến thực phẩm”. ', NULL, NULL),
+(4, 'Sườn non heo khay 500g', ' Thịt, cá, tôm, trứng', '', 109000, 't4.jpg', 'Sườn non heo CP được sản xuất từ hệ thống được kiểm soát chặt chẽ theo nguyên tắc chuỗi khép kín “Thức ăn chăn nuôi - Trang trại chăn nuôi – Nhà máy chế biến thực phẩm”. ', NULL, NULL),
+(5, 'Hộp 4 trứng vịt bắc thảo V.Food', 'Thịt, cá, tôm, trứng', '', 30000, 'g1.jpg', 'Trứng vịt bắc thảo (hay còn gọi bách thảo, bách nhật trứng) là món trứng đặc biệt có nguồn gốc từ Trung Hoa. Trứng bắc thảo ngoài hương vị rất ngon còn có nhiều chất tốt cho sức khỏe.', NULL, NULL),
+(6, 'Hộp 10 trứng gà tươi QLEgg', 'Thịt, cá, tôm, trứng', '', 27000, 'g2.jpg', 'Trứng gà là một loại thực phẩm chứa nhiều chất dinh dưỡng, cung cấp lượng đạm cao, cung cấp chất béo và vitamin, khoáng chất.', NULL, NULL),
+(7, 'Hộp 6 trứng gà ta T.Food', 'Thịt, cá, tôm, trứng', '', 23000, 'g3.jpg', 'Trứng gà ta là một loại thực phẩm chứa nhiều chất dinh dưỡng, cung cấp lượng đạm cao, cung cấp chất béo và vitamin, khoáng chất.', NULL, NULL),
+(8, 'Hộp 4 trứng vịt muối T.Food', 'Thịt, cá, tôm, trứng', '', 23000, 'g4.jpg', 'Trong lòng đỏ trứng vịt muối có chứa nhiều chất dinh dưỡng tốt cho sức khoẻ như vitamin, giàu chất oxy hoá, protein', NULL, NULL),
+(9, 'Cá nục vỉ 500g', 'Thịt, cá, tôm, trứng', '', 37500, 'c1.png', 'Cá nục là một loại cá sống ở biển, đây là một loại cá được nhiều người yêu thích bởi sự thơm ngon và nhiều lợi ích đối với sức khoẻ.', NULL, NULL),
+(10, 'Cá hường làm sạch khay 500g', 'Thịt, cá, tôm, trứng', '', 49500, 'c2.png', 'Cá hường hay còn gọi là cá mùi là loài cá không còn lạ với những người dân đồng bằng sông Cửu Long. Loại cá này có thịt mềm', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -141,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `reviews` (
 
 DROP TABLE IF EXISTS `roles`;
 CREATE TABLE IF NOT EXISTS `roles` (
-  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `description` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -154,10 +162,10 @@ CREATE TABLE IF NOT EXISTS `roles` (
 
 DROP TABLE IF EXISTS `transactions`;
 CREATE TABLE IF NOT EXISTS `transactions` (
-  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `total` int NOT NULL,
-  `quantity` int NOT NULL,
+  `total` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
   `address` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `telephone` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `productid` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -176,14 +184,14 @@ CREATE TABLE IF NOT EXISTS `transactions` (
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `address` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `telephone` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `role` int NOT NULL,
+  `role` int(11) NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
