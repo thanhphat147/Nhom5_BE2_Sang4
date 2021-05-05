@@ -180,7 +180,7 @@
                 }
             ],
             "description": "PHP Doctrine Inflector is a small library that can perform string manipulations with regard to upper/lowercase and singular/plural forms of words.",
-            "homepage": "https://www.doctrine-project.org/projects/inflector.blade.php",
+            "homepage": "https://www.doctrine-project.org/projects/inflector.html",
             "keywords": [
                 "inflection",
                 "inflector",
@@ -199,7 +199,7 @@
             },
             "funding": [
                 {
-                    "url": "https://www.doctrine-project.org/sponsorship.blade.php",
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
                 {
@@ -265,7 +265,7 @@
                 }
             ],
             "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
-            "homepage": "https://www.doctrine-project.org/projects/lexer.blade.php",
+            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
             "keywords": [
                 "annotations",
                 "docblock",
@@ -279,7 +279,7 @@
             },
             "funding": [
                 {
-                    "url": "https://www.doctrine-project.org/sponsorship.blade.php",
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
                 {
@@ -4454,7 +4454,7 @@
                     "role": "Developer"
                 }
             ],
-            "description": "CssToInlineStyles is a class that enables you to convert blade.php-pages/files into blade.php-pages/files with inline styles. This is very useful when you're sending emails.",
+            "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "support": {
                 "issues": "https://github.com/tijsverkoyen/CssToInlineStyles/issues",
@@ -4660,7 +4660,7 @@
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-            "homepage": "https://www.doctrine-project.org/projects/instantiator.blade.php",
+            "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
             "keywords": [
                 "constructor",
                 "instantiate"
@@ -4671,7 +4671,7 @@
             },
             "funding": [
                 {
-                    "url": "https://www.doctrine-project.org/sponsorship.blade.php",
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
                 {
@@ -5995,7 +5995,7 @@
             },
             "funding": [
                 {
-                    "url": "https://phpunit.de/donate.blade.php",
+                    "url": "https://phpunit.de/donate.html",
                     "type": "custom"
                 },
                 {

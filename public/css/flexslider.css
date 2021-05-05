@@ -4,7 +4,7 @@
  *
  * Copyright 2012 WooThemes
  * Free to use under the GPLv2 and later license.
- * http://www.gnu.org/licenses/gpl-2.0.blade.php
+ * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * Contributing author: Tyler Smith (@mbmufffin)
  * 
@@ -65,10 +65,10 @@ display:none;
   line-height: 0;
   height: 0;
 }
-blade.php[xmlns] .flexslider .slides {
+html[xmlns] .flexslider .slides {
   display: block;
 }
-* blade.php .flexslider .slides {
+* html .flexslider .slides {
   height: 1%;
 }
 .no-js .flexslider .slides > li:first-child {

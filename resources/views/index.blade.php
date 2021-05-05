@@ -251,17 +251,17 @@
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="{{ URL::asset('"images/" . {{ $product->image }} ') }}" alt=""> 
+									<img src="{{ asset('/images/' . $product->image) }}" alt=""> 
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
 									<h4>
-										<a href="single.html">{{ $product->productname }}</a>
+										<a href="single.php">{{ $product->productname }}</a>
 									</h4>
 									<div class="info-product-price">
 										<span class="item_price">{{ $product->price }}</span>
@@ -394,7 +394,7 @@
 									<img src="images/mk4.jpg" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="single.html" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th4 29, 2021 lúc 05:36 PM
+-- Thời gian đã tạo: Th5 05, 2021 lúc 01:03 AM
 -- Phiên bản máy phục vụ: 8.0.21
 -- Phiên bản PHP: 7.3.21
 
@@ -113,8 +113,8 @@ CREATE TABLE IF NOT EXISTS `products` (
 
 INSERT INTO `products` (`id`, `productname`, `producttype`, `description`, `price`, `image`, `catalogid`, `created_at`, `updated_at`) VALUES
 (1, 'Hộp 10 trứng gà tươi QLEgg', 'Thịt, cá, tôm, trứng', '', 27000, 't3.jpg', 'nQqNvesBbA', NULL, NULL),
-(2, 'Ba rọi heo khay 500g', 'Thịt, cá, tôm, trứng', '', 96000, 't1.jpg', 'Y5YtnqmWrk', NULL, NULL),
-(3, 'Thịt cổ bò Úc Pacow khay 250g', 'Thịt, cá, tôm, trứng', '', 87000, 't2.jpg', 'CabeFo2rST', NULL, NULL);
+(2, 'Ba rọi heo khay 500g', 'Thịt, cá, tôm, trứng', '', 96000, 't1a.jpg', 'Y5YtnqmWrk', NULL, NULL),
+(3, 'Thịt cổ bò Úc Pacow khay 250g', 'Thịt, cá, tôm, trứng', '', 87000, 't2a.jpg', 'CabeFo2rST', NULL, NULL);
 
 -- --------------------------------------------------------
 

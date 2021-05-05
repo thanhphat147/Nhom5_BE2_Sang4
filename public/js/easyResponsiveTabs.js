@@ -75,7 +75,7 @@
                     $tabItemh2 = $(this);
                     var $tabItem = $respTabs.find('.resp-tab-item:eq(' + itemCount + ')');
                     var $accItem = $respTabs.find('.resp-accordion:eq(' + itemCount + ')');
-                    $accItem.append($tabItem.blade.php());
+                    $accItem.append($tabItem.html());
                     $accItem.data($tabItem.data());
                     $tabItemh2.attr('aria-controls', options.tabidentify + '_tab_item-' + (itemCount));
                     itemCount++;
