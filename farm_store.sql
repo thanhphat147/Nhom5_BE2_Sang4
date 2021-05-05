@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3309
--- Thời gian đã tạo: Th5 05, 2021 lúc 03:32 AM
+-- Thời gian đã tạo: Th5 05, 2021 lúc 03:49 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `products_catalogid_foreign` (`catalogid`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `products`
@@ -139,7 +139,17 @@ INSERT INTO `products` (`id`, `productname`, `producttype`, `description`, `pric
 (15, 'Tôm xông khói - Smoked Shrimp', 'Thịt, cá, tôm, trứng', ' Rã đông tự nhiên 30-35 phút, ăn kèm với sốt muối tiêu chanh, mù tạt hoặc nước tương.', 245000, 'a3.jpg', '1', '2021-05-04 17:00:00', NULL),
 (16, 'Tôm thẻ khay 300g', 'Thịt, cá, tôm, trứng', 'Tôm thẻ là một món ăn rất được nhiều người ưa thích, có khá nhiều loại tôm khác nhau như: Tôm thẻ chân trắng, tôm thẻ chân đỏ, tôm thẻ bạc.', 51000, 'a4.jpg', '1', '2021-05-04 17:00:00', NULL),
 (17, 'Xà lách búp mỡ thuỷ canh túi 300g', 'Rau, củ', 'Xà lách búp mỡ thủy canh túi 300g có lá lớn, liên kết xếp tầng xung quanh, rất dễ tách ra từ thân cây. Lá cây rất mềm, có vị ngọt thanh, rất thơm ngon khi ăn sống.', 20000, 'r1.jpg', '2', '2021-05-04 17:00:00', NULL),
-(18, 'Xà lách lô lô xanh thuỷ canh túi 300g', 'Rau, củ', 'Xà lách từ lâu đã thành loại rau xanh ăn kèm không thể thiếu đối với nhiều món ăn, nhất là những món chiên, nướng. ', 20000, 'r2.jpg', '2', '2021-05-04 17:00:00', NULL);
+(18, 'Xà lách lô lô xanh thuỷ canh túi 300g', 'Rau, củ', 'Xà lách từ lâu đã thành loại rau xanh ăn kèm không thể thiếu đối với nhiều món ăn, nhất là những món chiên, nướng. ', 20000, 'r2.jpg', '2', '2021-05-04 17:00:00', NULL),
+(19, 'Cải bó xôi túi 500g', 'Rau, củ', 'Cải bó xôi hay còn được gọi là rau Bina, là một loại ra được ưa chuộng ở rất nhiều nơi trên thế giới bởi những giá trị dinh dưỡng mà nó mang lại Một số công dụng tuyệt vời của cải bó xôi có thể kể đến như chống ung thư, chống viêm, ngăn ngừa bệnh tuyến tiền liệt, hỗ trợ giảm cân, làm đẹp da, sáng mắt,...', 29000, 'r3.jpg', '2', '2021-05-04 17:00:00', NULL),
+(20, 'Rau muống nước baby túi 300g\r\n', 'Rau, củ', 'Rau muống nước baby là một loại rau muống có phần lá với kích thước nhỏ nhưng công dụng không thua kém gì so với rau muống thông thường. Đặc biệt, đây là loại rau có chứa hàm lượng nước cao (92%) cùng với một số các khoáng chất có lợi khác (canxi, photpho, sắt,...) cùng các nhóm vitamin B, C,... Vì thế, rau muống có nhiều công dụng như cung cấp nguồn nước cho cơ thể, giúp giải nhiệt, ổn định huyết áp, ngăn ngừa ung thư, điều hòa tim mạch,... ', 19000, 'r4.jpg', '2', '2021-05-04 17:00:00', NULL),
+(21, 'Củ sắn túi 500g', 'Rau, củ', 'Củ sắn hay còn gọi là củ đậu, đây là một loại rau củ có xuất xứ từ Mexico, được trồng rất nhiều khắp thế giới. Củ sắn có kích thước to, tròn và trông khá giống với con quay, thịt chắc và nặng, có lớp vỏ xơ dai màu vàng. Phần thịt của củ sẵn khá ngọt, nhiều nước và rất giòn.\r\nThông thường người ta sẽ dùng củ sắn để ăn sống hoặc chế biến thành nhiều món ăn khác nhau như: xào, luộc hay nấu canh,...', 10000, 'u1.jpg', '2', '2021-05-04 17:00:00', NULL),
+(22, 'Củ cải trắng túi 500g', 'Rau, củ', 'Củ cải trắng hay còn được gọi là củ cải mùa đông, có nguồn gốc từ Trung Quốc và Nhật Bản. Đây là một loại rau củ được trồng để làm thực phẩm và dầu hạt. Củ cải trắng có ngoại hình giống với cà rốt nhưng có màu trắng, mùi vị thì hơi ngọt và cay.', 9000, 'u2.jpg', '2', '2021-05-04 17:00:00', NULL),
+(23, 'Bí xanh túi 500g', 'Rau, củ', 'Bí xanh hay còn gọi là bí đao, bí phấn, bí dài, bí chanh, bí đá, bí gối, bù rợ, đông qua… là một loại rau, củ ngon dùng để làm nấu ăn và đặc biệt hơn là có thể làm mứt. Bí xanh là một dạng dây leo, khi già trái sẽ dài và xuất hiện lớp phấn và lông cứng bao quanh. ', 8000, 'u3.jpg', '2', '2021-05-04 17:00:00', NULL),
+(24, 'Su su túi 500g', 'Rau, củ', 'Su su (hay còn gọi là su le) là một loại thực phẩm thuộc lớp củ, quả thuộc họ Bầu, bí, cùng với dưa hấu, dưa chuột và bí. Cây su su thân leo có rễ phình thành củ. Lá to, bóng, hình chân vịt, có 5 thuỳ, tua cuốn chia 3-5 nhánh. Hoa nhỏ, đơn tính, cùng gốc, màu trắng vàng. Quả thịt hình quả lê có cạnh lồi dọc và sần sùi, to bằng nắm tay, chứa một hạt lớn hình cầu. Quả su su có tính mát, lành tính, chứa nhiều chất dinh dưỡng có lợi cho sức khỏe như nước, protid, glucid, vitamin C', 8000, 'u4.jpg', '2', '2021-05-04 17:00:00', NULL),
+(25, 'Táo Envy hộp 1kg', 'Qủa(Trái cây)', 'Táo tây còn gọi là bôm (phiên âm từ tiếng Pháp: pomme) là một loại trái cây từ cây táo tây Malus domestica. Cây táo có nguồn gốc ở Trung Á, nơi tổ tiên của nó tức là loài táo dại Tân Cương hiện vẫn còn tồn tại cho đến ngày hôm nay. Táo đã được trồng từ hàng ngàn năm ở châu Á và châu Âu, được thực dân châu Âu đưa đến Bắc Mỹ. Táo có ý nghĩa tôn giáo và thần thoại trong nhiều nền văn hóa, bao gồm cả văn hóa ở Bắc Âu, Hy Lạp và Kitô giáo tại châu Âu.', 242000, 'q1.jpg', '3', '2021-05-04 17:00:00', NULL),
+(26, 'Nho xanh không hạt hộp 1kg', '3', 'Nho xanh không hạt là loại trái cây tươi nhập khẩu cao cấp, nho có đặc điểm trái tròn, tươi ngon mọng nước. Không chỉ vậy, quả nho còn có vị ngọt đậm đà, thịt chắc giòn, ngon miệng. Sản phẩm nhập khẩu trực tiếp từ Mỹ, đạt tiêu chuẩn xuất khẩu toàn cầu và được bảo quản tươi ngon đến tận tay khách hàng.', 189000, 'q2.jpg', '3', '2021-05-04 17:00:00', NULL),
+(27, 'Nho đỏ không hạt hộp 1kg', 'Qủa(Trái cây)', 'Nho là loại trái cây quen thuộc, chứa nhiều vitamin và dưỡng chất, không những thế nho còn giúp phòng chống nhiều bệnh. Quả nho có vị chua chua, ngọt ngọt rất ngon có thể ăn trực tiếp hoặc làm nước ép, sinh tố,... đều rất có lợi cho sức khoẻ, giúp phòng ngừa nhiều bệnh và làm đẹp. Nho chứa nhiều dưỡng chất như: vitamin B1, B2, B6, B12, A, C, P,... canxi, magiê, sắt, axit salicilic , axit photphoric, axit amin và những chất khác', 186000, 'q3.jpg', '3', '2021-05-04 17:00:00', NULL),
+(28, 'Dâu tây hộp 500g (giao 2 hộp)', 'Qủa(Trái cây)', 'Dâu tây hay còn gọi là dâu đất, được trồng lấy trái ở vùng ôn đới. Với mùi thơm hấp dẫn cùng vị dâu ngọt lẫn chua nên dâu tây được ưa chuộng. Loại trái cây này có giá trị dinh dưỡng cao, được coi là “nữ hoàng của các loài trái cây”. Dâu tây chứa nhiều loại đường, protein, axít hữu cơ, pectic và giàu vitamin, chất khoáng cũng như nguyên tố vi lượng giúp tăng cường hệ miễn dịch, bảo vệ mắt, chống ung thư, ngăn ngừa vết nhăn,...', 158000, 'q4.jpg', '3', '2021-05-04 17:00:00', NULL);
 
 -- --------------------------------------------------------
 
