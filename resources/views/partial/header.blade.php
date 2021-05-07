@@ -31,6 +31,16 @@
 				<li>
 					<span class="fa fa-phone" aria-hidden="true"></span> 001 234 5678
 				</li>
+				@if (Auth::check())
+				<li>
+					<a href="#">
+						<span class="fa fa-user" aria-hidden="true"></span>Hello {{Auth::user()->name}}</a>
+				</li>
+				<li>
+					<a href="{{ route('logout') }}">
+						<span class="fa fa-sign-out" aria-hidden="true"></span>Log Out</a>
+				</li>
+				@else
 				<li>
 					<a href="#" data-toggle="modal" data-target="#myModal1">
 						<span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
@@ -39,6 +49,7 @@
 					<a href="#" data-toggle="modal" data-target="#myModal2">
 						<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
 				</li>
+				@endif
 			</ul>
 			<!-- //header lists -->
 			<!-- search -->
@@ -467,9 +478,13 @@
 						<a href="#" data-toggle="modal" data-target="#myModal2">
 							Sign Up Now</a>
 					</p>
-					<form action="#" method="post">
+					@if (Session::has('flag'))
+					<div class="alert alert-{{ Session::get('flag') }}">{{ Session::get('message') }}</div>
+					@endif
+					<form action="{{ route('login') }}" method="post">
+						@csrf
 						<div class="styled-input agile-styled-input-top">
-							<input type="text" placeholder="User Name" name="Name" required="">
+							<input type="email" placeholder="E-mail" name="email" required="">
 						</div>
 						<div class="styled-input">
 							<input type="password" placeholder="Password" name="password" required="">
@@ -504,18 +519,35 @@
 					<p>
 						Come join the Grocery Shoppy! Let's set up your Account.
 					</p>
-					<form action="#" method="post">
+					@if (count($errors)>0)
+					<div class="alert alert-danger">
+						@foreach ($errors->all() as $item)
+							{{$item}}
+						@endforeach
+					</div>
+					@endif
+					@if(Session::has('thanhcong'))
+					<div class="alert alert-success">{{ Session::get('thanhcong') }}</div>
+					@endif
+					<form action="{{route('signup')}}" method="post">
+						@csrf
 						<div class="styled-input agile-styled-input-top">
-							<input type="text" placeholder="Name" name="Name" required="">
+							<input type="text" placeholder="User Name" name="name" required="">
 						</div>
 						<div class="styled-input">
-							<input type="email" placeholder="E-mail" name="Email" required="">
+							<input type="email" placeholder="E-mail" name="email" required="">
 						</div>
 						<div class="styled-input">
-							<input type="password" placeholder="Password" name="password" id="password1" required="">
+							<input type="text" placeholder="Address" name="address" required="">
 						</div>
 						<div class="styled-input">
-							<input type="password" placeholder="Confirm Password" name="Confirm Password" id="password2" required="">
+							<input type="text" placeholder="Telephone" name="phone" required="">
+						</div>
+						<div class="styled-input">
+							<input type="password" placeholder="Password" name="password" id="password1" pattern="[a-zA-Z0-9!@#$%^&*]{6,}" required="">
+						</div>
+						<div class="styled-input">
+							<input type="password" placeholder="Confirm Password" name="ConfirmPassword" id="password2" required="">
 						</div>
 						<input type="submit" value="Sign Up">
 					</form>
@@ -640,7 +672,7 @@
 								</ul>
 							</li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sản Phẩm
+								<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product
 									<span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu multi-column columns-3">

@@ -1,4 +1,4 @@
-@extends('master');
+@extends('layouts.master');
 @section('content')
     <!-- page -->
 	<div class="services-breadcrumb">

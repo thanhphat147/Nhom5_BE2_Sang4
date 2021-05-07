@@ -15,10 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', 'MyController@getAllProduct');
+Route::get('/', 'MyController@getAllProduct')->name('home');
 Route::get('/catelogy/sp{id}', 'MyController@getProductByCatalog');
-
-
+//Sign Up
+Route::post('/sign-up','MyController@postSignUp')->name('signup');
+//login
+Route::post('/login','MyController@postSignIn')->name('login');
+//logout
+Route::get('/logout','MyController@Logout')->name('logout');
 //tham so khong bat buoc
 // Route::get('{id?}', 'MyController@index1');
 //tham so bat buoc
